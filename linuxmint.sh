@@ -3,7 +3,7 @@ echo  "\033[1;33m>>Enter User name, used for this PC<<\033[0m"
 read user
 if [ -d "/home/$user" ]
 then
-		echo "Check user - $user succesfully!"
+		echo "\033[1;31mVerify user - OK!\033[0m"
 else
 		echo "User $user not exist. Break..."
 		exit
