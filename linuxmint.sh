@@ -5,7 +5,7 @@ if [ -d "/home/$user" ]
 then
 		echo "\033[1;31mVerify user - OK!\033[0m"
 else
-		echo "User $user not exist. Break..."
+		echo "\033[1;31mUser $user not exist. Break...\033[0m"
 		exit
 fi
 
