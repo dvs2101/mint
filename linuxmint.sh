@@ -2,7 +2,7 @@
 echo Enter User name, used for this PC:
 read user
 dpkg --add-architecture i386
-wget -nc https://dl.winehq.org/wine-builds/Release.key && apt-key add Release.key
+su $user -c "wget -P /home/$user/ https://dl.winehq.org/wine-builds/Release.key && apt-key add /home/$user/Release.key"
 apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main' -y
 add-apt-repository ppa:remmina-ppa-team/remmina-next -y
 apt update
