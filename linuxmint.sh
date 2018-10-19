@@ -6,7 +6,7 @@ echo  "#\033[1;31mAdding Repos\033[0m#"
 echo  "##############"
 dpkg --add-architecture i386
 su $user -c "wget -P /home/$user/ https://dl.winehq.org/wine-builds/Release.key"
-apt-key add /home/$user/Release.key"
+apt-key add /home/$user/Release.key
 apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main' -y
 add-apt-repository ppa:remmina-ppa-team/remmina-next -y
 apt update
